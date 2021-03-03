@@ -6,13 +6,17 @@
   <groupId>com.example</groupId>
   <artifactId>java-getting-started</artifactId>
   <version>1.0</version>
-
-  <parent>
+  <plugins>
+  <plugin>
     <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.3.0.RELEASE</version>
-    <relativePath/>
-  </parent>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+    <configuration>
+      <skip>true</skip>
+    </configuration>
+ </plugin>
+
+</plugins>
+  
   <name>java-getting-started</name>
 
   <properties>
